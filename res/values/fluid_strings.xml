@@ -196,4 +196,7 @@
     <string name="display_cutout_force_fullscreen_summary">Ignore notch space for selected applications</string>
     <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
     <string name="cutout_force_fullscreen_no_apps">No apps</string>
+
+    <!-- Warning message for the sd card setup -->
+    <string name="storage_warning_internal">Warning: This option may not work properly or lead to data loss and is therefore not recommended!</string>
 </resources>
