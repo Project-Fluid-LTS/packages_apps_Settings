@@ -102,11 +102,10 @@ public class FluidVersionPreferenceController extends BasePreferenceController {
     private void updateFluidVersionText() {
         String fluidVer = SystemProperties.get(FLUID_VERSION_PROPERTY);
         String fluidType = SystemProperties.get(FLUID_BUILD_TYPE);
-        String fluidTypeCapitalized = fluidType.substring(0, 1).toUpperCase() + fluidType.substring(1).toLowerCase();
         String[] fluidVerSeparated = fluidVer.split("-");
 
         if (!fluidVer.isEmpty() && !fluidType.isEmpty()) {
-            mFluidVersionText.setText(fluidVerSeparated[0] + " " + fluidTypeCapitalized + " | ");
+            mFluidVersionText.setText(fluidVerSeparated[0] + " " + fluidType + " | ");
             mFluidVersionFlavourText.setText(fluidVerSeparated[1]);
         } else {
             mFluidVersionText.setText("");
